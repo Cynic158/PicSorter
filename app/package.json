@@ -1,0 +1,59 @@
+{
+  "name": "picsorter",
+  "version": "1.1.1",
+  "description": "sort your pictures better",
+  "main": "main.js",
+  "author": "cynic",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec electron . --watch ./ --ext .js,.css,.vue",
+    "app:dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.4",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "image-size": "^1.0.2",
+    "koa": "^2.14.2",
+    "koa-static": "^5.0.0",
+    "wrap-ansi": "7.0.0"
+  },
+  "build": {
+    "files": [
+      "main.js",
+      "index.html",
+      "node_modules/**",
+      "ipcHandler/**",
+      "preload.js"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "extraResources": [
+      {
+        "from": "pic",
+        "to": "pic"
+      },
+      {
+        "from": "webdist",
+        "to": "webdist"
+      },
+      {
+        "from": "sorts",
+        "to": "sorts"
+      },
+      {
+        "from": "icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

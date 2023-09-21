@@ -1,0 +1,16 @@
+.message_container {
+  position: absolute;
+  left: 50%;
+  top: 32px;
+  transform: translateX(-50%);
+  z-index: 999;
+  transition: all 0.3s;
+  border-radius: 5px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  background-color: var(--transparent-blue-8);
+  color: var(--transparent-white-8);
+  display: none;
+  opacity: 0;
+}

@@ -1,0 +1,36 @@
+.viewer_container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  .viewer_select_all {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--transparent-black-7);
+    opacity: 0.2;
+    transition: all 0.2s;
+    z-index: 800;
+    border-radius: 0 0 0 50px;
+    .icon-menu {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      font-size: 24px;
+      color: var(--transparent-blue-8);
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      transition: all 0s;
+      background-color: var(--transparent-black-5);
+      span {
+        transition: all 0s;
+        color: var(--transparent-blue-4);
+      }
+    }
+  }
+}

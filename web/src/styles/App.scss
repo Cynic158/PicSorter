@@ -1,0 +1,21 @@
+.app_container {
+  height: 100vh;
+  background: var(--app-bg); /* 半透明背景 */
+  // background: transparent;
+  // backdrop-filter: blur(5px); /* 模糊背景 */
+  border-radius: 10px;
+  overflow: hidden;
+  // border: 2px solid transparent; /* 透明的边框 */
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 模糊边框，模糊效果可以调整 */
+}
+.main_container {
+  height: calc(100vh - 32px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .main_view {
+    height: 100%;
+    width: calc(100% - 240px);
+    position: relative;
+  }
+}

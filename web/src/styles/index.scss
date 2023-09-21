@@ -1,0 +1,22 @@
+@import "./reset.scss";
+@import "../assets/icon/iconfont.css";
+@import "./color.css";
+
+@font-face {
+  font-family: "TsangerYuYangT";
+  src: url("../assets/font/TsangerYuYangT_W03_W03.ttf") format("truetype");
+  /* 可能还需要其他字体格式的引用，具体取决于字体文件 */
+  /* 可以设置字体的其他属性，如字重、字体样式等 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "TsangerYuYangT", Helvetica, Arial, "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+span,
+img {
+  user-select: none;
+}

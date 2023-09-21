@@ -1,0 +1,75 @@
+.header_container {
+  color: #094ecd;
+  color: #00b0d8;
+  height: 32px;
+  background: var(--header-bg);
+  border-radius: 10px 10px 0 0;
+  user-select: none;
+  -webkit-app-region: drag;
+  display: flex;
+  justify-content: space-between;
+  .header_left {
+    display: inline-flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      -webkit-app-region: no-drag;
+      color: var(--white);
+      &:nth-of-type(1) {
+        margin-left: 8px;
+        margin-right: 30px;
+        color: var(--blue);
+      }
+      &:nth-of-type(2) {
+        max-width: 220px;
+        white-space: nowrap; /* 防止文字换行 */
+        overflow: hidden; /* 隐藏溢出的文本 */
+        text-overflow: ellipsis;
+      }
+      &:nth-of-type(3) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      &:nth-of-type(4) {
+        margin-right: 30px;
+      }
+      &:nth-of-type(5) {
+        margin-right: 30px;
+      }
+    }
+  }
+  .header_right {
+    display: inline-flex;
+    align-items: center;
+    button {
+      -webkit-app-region: no-drag;
+      height: 100%;
+      width: 40px;
+      margin-left: 4px;
+      transition: all 0.3s;
+      &:hover {
+        background: var(--transparent-blue-8);
+      }
+      &:active {
+        background: var(--transparent-blue-4);
+      }
+      &:nth-of-type(3):hover {
+        background: var(--transparent-red-8);
+      }
+      &:nth-of-type(3):active {
+        background: var(--transparent-red-4);
+      }
+    }
+    .iconfont {
+      color: var(--transparent-white-8);
+      transition: all 0.3s;
+    }
+    .icon-minus-bold,
+    .icon-close-bold {
+      font-size: 20px;
+    }
+    .icon-zuidahua {
+      font-size: 14px;
+    }
+  }
+}
